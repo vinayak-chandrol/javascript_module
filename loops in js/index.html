@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="nm1">
+    <button onclick="get_input()">submit</button>
+
+    <p id="display"></p>
+    <script>
+
+
+ function get_input()
+ {  
+    let x=document.getElementById("nm1").value;
+    alert(x);
+    document.getElementById("display").innerHTML=x;
+ }
+        let age=parseInt(prompt("enter your age"));
+        if (age>=18){
+            document.write("you can vote")
+        }
+
+        else{
+            document.write("you cannot vote")
+        }
+    </script>
+</body>
+</html>

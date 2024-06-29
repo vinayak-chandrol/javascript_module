@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mynav" id="mynav">
+        <div class="logo">logo</div>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+       
+    </div>
+    <button onclick="open_mynav()"id="btn">click</button>
+    <button onclick="close_mynav()"id="btn1">hide</button>
+
+    
+    <script>
+        var x= document.getElementById("mynav")
+        var y=document.getElementById("btn")
+        var z=document.getElementById("btn1")
+
+        // document.write(x)
+        function open_mynav()
+        {
+            x.style.left="0%";
+            y.style.display="none";
+            z.style.display="block";
+        }
+      
+        function close_mynav()
+        {
+            x.style.left="-600px";
+            z.style.display="none";
+            y.style.display="block"
+        }
+
+        // var para_data=document.GetElementById("para").innertext;
+        
+    </script>
+</body>
+</html>

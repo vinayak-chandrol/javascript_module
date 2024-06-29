@@ -1,0 +1,27 @@
+body{
+    background-color:aqua;
+}
+
+.mynav{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -600px;
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    
+}
+li{
+    padding: 10px;
+}
+
+#btn1{
+    position: absolute;
+}
+
+
