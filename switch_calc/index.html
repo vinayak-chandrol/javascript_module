@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- write a program to make a calculator using switch case -->
+    
+        <h1>calculator</h1>
+        <input type="text"id="num1"><br><br>
+        <input type="text"id="num2">
+        
+        <button  onclick="cal()">submit</button>
+
+        <p id="display"></p>
+        
+    
+        <script>
+        
+        function cal(){
+
+        let x=parseFloat(document.getElementById("num1").value);
+        
+        let y=parseFloat(document.getElementById("num2").value);
+       
+                 
+            let a=prompt("enter what do you want?");
+            let z;
+            switch(a)
+            {
+                case '+':
+                      
+                     z= x+y;
+                    
+                    break;
+                case '-':
+                      
+                     z = x-y;
+                   
+                    break;
+                case '/':
+                      
+                     z= x/y;
+                    
+                    break;
+                case '+':
+                      
+                     z= x%y;
+                  
+                    break;
+                case '+':
+                      
+                    z= x*y;
+                   
+                    break;
+
+                default:
+
+                    z="invalid operator";   
+
+               
+            }
+
+            document.getElementById("display").innerHTML="Result:" + z;
+        }
+        </script>
+
+</body>
+</html>

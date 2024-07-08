@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <!-- // wap ongiven condition choice based on press 1 take 2 input from input Element
+    // and store the username and password and store it in a string also show the value
+    // in browser on press 2 ,3,4,5 choice -->
+
+    <input type="text" id="username"><br><br>
+    <input type="password" name="password" id="pass"><br>
+    <button id="btn" onclick="store()">store</button><br>
+
+    
+    <script>
+       
+
+        function store()
+        {
+            var x=document.getElementById("username").value;
+            var y=document.getElementById("pass").value;
+            let str="";
+            str=str+x+"<br>"+y+"<br>";
+
+            document.write(str);
+            
+            document.write("your username is: "+x,"<br>");
+            document.write("your password is: "+y,"<br>");
+        }
+    </script>
+</body>
+</html>

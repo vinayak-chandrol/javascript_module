@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- create a single page website using js with responsive and using js function must be contain 
+        header ,footer and 3 section also use sum toggling effect on section,header and footer 
+        NOTE = navbar must be hamburger -->
+        <header>
+           <a href="#" onclick="fun1()"><i class="fa-solid fa-bars"  id="non" ></i></a>
+            <div class="ham1" id = "ham">
+                <h1>hamburger</h1>
+                <ul class="list1">
+                    <li><a href="#">account</a></li>
+                    <li><a href="#">subscriptions</a></li>
+                    <li><a href="#">playlist</a></li>
+                    <li><a href="#">offline</a></li>
+                    <li><a href="#">watch later</a></li>
+                    <li><a href="#">help</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">about us</a></li>
+                   
+        
+            </div>
+            <input type="search" id="srch" class="sr" placeholder="search">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">subscriptions</a></li>
+                <li><a href="#">others</a></li>
+                <li><a href="#">offline</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <section>
+                <p class="dis" id="display">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, laboriosam harum accusantium nihil dolorum beatae porro dolores itaque aperiam officiis labore architecto illo nam mollitia, enim sint voluptates repellendus ab voluptatibus amet id! Expedita, consequatur quia. Quod vero atque est, minima obcaecati amet aliquam neque eveniet minus. Dolore culpa qui reprehenderit, maxime rerum modi aliquid, amet tenetur fugiat consequuntur unde aliquam eos praesentium ex voluptates iste repudiandae? Soluta voluptatem quisquam mollitia quibusdam cum vitae amet odit tempore vel, nihil aperiam asperiores consectetur eum accusamus repellendus aut! Dolorum fuga quae labore pariatur quo dolores soluta deserunt saepe non vitae expedita, minima, eligendi, incidunt doloribus ex. Maxime reprehenderit cum praesentium debitis, dolorum quis ducimus blanditiis numquam! Quo nisi laborum harum doloremque distinctio nemo ratione similique quibusdam minus! Aliquid tempora debitis esse rem, enim similique laudantium quod, sequi, illum nihil cum est. Tempore, ullam quod nam cum similique dignissimos aliquam architecto fuga tenetur, quam reiciendis a sequi amet placeat beatae nesciunt modi, magnam cupiditate. Dolorem, accusantium! Obcaecati placeat odit est? Cumque, ad autem recusandae iure magni soluta corrupti assumenda officiis alias amet? Reiciendis deserunt delectus neque rerum asperiores, pariatur facere quidem unde quod ea fuga corrupti earum veniam, adipisci dolore repellendus voluptatem quam!</p>
+            </section>
+            <section>
+                <img src="" alt="">
+            </section>
+        </main>
+
+    <script>
+
+       
+      function fun1()
+      {
+        var y =document.getElementById(non);
+       
+        var x=document.getElementById("ham");
+        x.style.position="relative";
+        x.style.left="0px";
+        x.style.display="block";
+        y.style.display="none";
+      }
+    </script>
+</body>
+</html>
